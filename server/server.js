@@ -20,7 +20,7 @@ await connectCloudinary();
 
 
 // allow multiple origins
-const allowedOrigins = [process.env.ALLOWED_ORIGINS, "https://grocerybee-frontend.vercel.app"];
+const allowedOrigins = [process.env.ALLOWED_ORIGINS, "http://localhost:5173/"];
 
 app.post("/stripe",express.raw({type: "application/json"}), stripeWebhooks);
 

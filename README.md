@@ -6,16 +6,6 @@
 
 Grocery Bee is a full-stack e-commerce web app for an online grocery store, built with the **MERN stack**. Users can browse, search, and buy groceries through a responsive interface.
 
-🔗 **Live App**: [https://grocerybee-frontend.vercel.app/](https://grocerybee-frontend.vercel.app/)
-
-[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
-
----
-
-## 📸 Screenshots
-![Homepage](./docs/screenshots/Dashboard.png)
-![Cart](./docs/screenshots/cart.png)
-
 ---
 
 ## 📦 Tech Stack
@@ -23,11 +13,6 @@ Grocery Bee is a full-stack e-commerce web app for an online grocery store, buil
 - **Backend**: Node.js, Express.js, MongoDB (Mongoose), Cloudinary, Stripe, JWT, Bcrypt.js, Multer
 - **Tools**: Git, ESLint, dotenv
 
----
-
-## 🚀 Getting Started
-
-See the [Setup Guide](./docs/setup-guide.md) for installation and development instructions.
 
 ---
 
@@ -39,12 +24,6 @@ See the [Setup Guide](./docs/setup-guide.md) for installation and development in
 - Image uploads via Cloudinary
 - Responsive UI with TailwindCSS
 - Real-time notifications
-
----
-
-## 🚀 Deployment
-- **Frontend**: Deploy `client/dist` to Vercel/Netlify. Set `VITE_BACKEND_URL`.
-- **Backend**: Deploy `server` to Heroku/Render. Configure env vars.
 
 ---
 
@@ -71,9 +50,3 @@ See the [Setup Guide](./docs/setup-guide.md) for installation and development in
 - Test setup on a fresh environment.
 - Update `your-username` in the clone command.
 
----
-
-## 📜 License
-Licensed under the ISC License. See [LICENSE](LICENSE).
-
----
