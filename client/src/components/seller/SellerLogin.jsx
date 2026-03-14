@@ -10,7 +10,7 @@ const SellerLogin = () => {
   const onSubmitHandler = async (e) => {
     try {
       e.preventDefault();
-      const { data } = await axios.post("/api/seller/login", {
+      const { data } = await axios.post("https://grocery-project-4sgd.onrender.com/api/seller/login", {
         email,
         password,
       });
