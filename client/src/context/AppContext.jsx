@@ -36,7 +36,7 @@ export const AppContextProvider = ({ children }) => {
   // Fetch user auth status , user data and cart items
   const fetchUser = async () => {
     try {
-      const { data } = await axios.get("https://grocery-project-4sgd.onrender.com/api/user/is-auth");
+      const { data } = await axios.get("https://grocery-project-4sgd.onrender.com/api/user/is-auth", {withCredentials:true});
       if (data.success) {
         setUser(data.user);
         setCartItems(data.user.cartItems);
