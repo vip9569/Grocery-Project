@@ -20,7 +20,7 @@ await connectCloudinary();
 
 
 // allow multiple origins
-const allowedOrigins = [process.env.ALLOWED_ORIGINS, "http://localhost:5173/", "https://grocery-project-2-ticy.onrender.com/"];
+const allowedOrigins = [process.env.ALLOWED_ORIGINS, "http://localhost:5173", "https://grocery-project-2-ticy.onrender.com"];
 
 app.post("/stripe",express.raw({type: "application/json"}), stripeWebhooks);
 
