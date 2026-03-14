@@ -21,7 +21,7 @@ export const AppContextProvider = ({ children }) => {
   // Fetch seller Status
   const fetchSeller = async () => {
     try {
-      const { data } = await axios.get("/api/seller/is-auth");
+      const { data } = await axios.get("https://grocery-project-4sgd.onrender.com/api/seller/is-auth");
       if (data.success) {
         setIsSeller(true);
       } else {
