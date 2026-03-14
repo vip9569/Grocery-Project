@@ -21,7 +21,7 @@ export const AppContextProvider = ({ children }) => {
   // Fetch seller Status
   const fetchSeller = async () => {
     try {
-      const { data } = await axios.get("https://grocery-project-4sgd.onrender.com/api/seller/is-auth");
+      const { data } = await axios.get("https://grocery-project-4sgd.onrender.com/api/seller/is-auth", {withCredentials = true});
       if (data.success) {
         setIsSeller(true);
       } else {
@@ -36,7 +36,7 @@ export const AppContextProvider = ({ children }) => {
   // Fetch user auth status , user data and cart items
   const fetchUser = async () => {
     try {
-      const { data } = await axios.get("/api/user/is-auth");
+      const { data } = await axios.get("https://grocery-project-4sgd.onrender.com/api/user/is-auth");
       if (data.success) {
         setUser(data.user);
         setCartItems(data.user.cartItems);
@@ -50,7 +50,7 @@ export const AppContextProvider = ({ children }) => {
   //fetch all products
   const fetchProducts = async () => {
     try {
-      const { data } = await axios.get("/api/product/list");
+      const { data } = await axios.get("https://grocery-project-4sgd.onrender.com/api/product/list", {withCredentials = true});
       if (data.success) {
         setProducts(data.products);
       } else {
@@ -126,7 +126,7 @@ export const AppContextProvider = ({ children }) => {
   useEffect(() => {
    const updateCart = async () => {
       try {
-        const { data } = await axios.post("/api/cart/update", { cartItems });
+        const { data } = await axios.post("https://grocery-project-4sgd.onrender.com/api/cart/update", { cartItems }, {withCredentials = true});
         if (!data.success) {
           toast.error(data.message);
         }
